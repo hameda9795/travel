@@ -48,6 +48,7 @@ export default function EditAccommodationPage() {
     facilities: [],
     organization: 'TUI',
     isPopular: false,
+    homePageOrder: null,
     status: 'Gepubliceerd',
   });
 
@@ -84,6 +85,7 @@ export default function EditAccommodationPage() {
       facilities: accommodation.facilities,
       organization: accommodation.organization,
       isPopular: accommodation.isPopular,
+      homePageOrder: accommodation.homePageOrder,
       status: accommodation.status,
     });
 

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "Gran Canaria",
+    "slug": "gran-canaria",
+    "isActive": true,
+    "createdAt": "2026-01-02T20:26:32.013Z"
+  },
+  {
+    "id": "2",
+    "name": "Tenerife",
+    "slug": "tenerife",
+    "isActive": true,
+    "createdAt": "2026-01-02T20:26:32.013Z"
+  },
+  {
+    "id": "3",
+    "name": "Lanzarote",
+    "slug": "lanzarote",
+    "isActive": true,
+    "createdAt": "2026-01-02T20:26:32.013Z"
+  },
+  {
+    "id": "4",
+    "name": "Fuerteventura",
+    "slug": "fuerteventura",
+    "isActive": true,
+    "createdAt": "2026-01-02T20:26:32.013Z"
+  },
+  {
+    "id": "5",
+    "name": "La Palma",
+    "slug": "la-palma",
+    "isActive": true,
+    "createdAt": "2026-01-02T20:26:32.013Z"
+  },
+  {
+    "id": "6",
+    "name": "La Gomera",
+    "slug": "la-gomera",
+    "isActive": true,
+    "createdAt": "2026-01-02T20:26:32.013Z"
+  },
+  {
+    "id": "7",
+    "name": "El Hierro",
+    "slug": "el-hierro",
+    "isActive": true,
+    "createdAt": "2026-01-02T20:26:32.013Z"
+  }
+]

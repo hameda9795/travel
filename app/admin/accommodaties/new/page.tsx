@@ -42,6 +42,7 @@ export default function NewAccommodationPage() {
     facilities: [] as string[],
     organization: 'TUI',
     isPopular: false,
+    homePageOrder: null,
     status: 'Gepubliceerd' as const,
   });
 

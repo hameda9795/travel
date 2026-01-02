@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Breadcrumb from '@/components/layout/Breadcrumb';
@@ -103,7 +103,7 @@ export default function AccommodationDetailPage() {
   ];
 
   // Facility icons mapping
-  const facilityIcons: Record<string, JSX.Element> = {
+  const facilityIcons: Record<string, React.JSX.Element> = {
     Zwembad: <Waves className="w-8 h-8 text-primary flex-shrink-0" />,
     WiFi: <Wifi className="w-8 h-8 text-primary flex-shrink-0" />,
     Restaurant: <UtensilsCrossed className="w-8 h-8 text-primary flex-shrink-0" />,
@@ -160,10 +160,10 @@ export default function AccommodationDetailPage() {
                 {accommodation.rating >= 9
                   ? 'Uitstekend'
                   : accommodation.rating >= 8
-                  ? 'Zeer goed'
-                  : accommodation.rating >= 7
-                  ? 'Goed'
-                  : 'Gemiddeld'}
+                    ? 'Zeer goed'
+                    : accommodation.rating >= 7
+                      ? 'Goed'
+                      : 'Gemiddeld'}
               </p>
             </div>
             <div>
