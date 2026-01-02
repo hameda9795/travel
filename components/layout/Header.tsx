@@ -28,39 +28,6 @@ export default function Header() {
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const [expandedMobileItems, setExpandedMobileItems] = useState<Set<string>>(new Set());
 
-  // Default menu items
-  const defaultMenuItems: MenuItem[] = [
-    {
-      id: 'eilanden',
-      title: 'Eilanden',
-      slug: '',
-      columns: [
-        {
-          id: 'col1',
-          title: 'Populaire Eilanden',
-          items: [
-            { id: '1', label: 'Gran Canaria', href: '/gran-canaria' },
-            { id: '2', label: 'Tenerife', href: '/tenerife' },
-            { id: '3', label: 'Lanzarote', href: '/lanzarote' },
-            { id: '4', label: 'Fuerteventura', href: '/fuerteventura' },
-          ]
-        }
-      ]
-    },
-    {
-      id: 'accommodaties',
-      title: 'Accommodaties',
-      slug: 'accommodaties',
-      columns: []
-    },
-    {
-      id: 'artikelen',
-      title: 'Artikelen',
-      slug: 'artikelen',
-      columns: []
-    }
-  ];
-
   // Load menu items from localStorage
   useEffect(() => {
     const loadMenuItems = () => {
@@ -71,11 +38,7 @@ export default function Header() {
           setMenuItems(parsed);
         } catch (error) {
           console.error('Error loading menu:', error);
-          setMenuItems(defaultMenuItems);
         }
-      } else {
-        // Use default menu if nothing saved
-        setMenuItems(defaultMenuItems);
       }
     };
 
